@@ -1,0 +1,453 @@
+/* 
+CSS:
+*/
+
+/* Winter Forest Theme */
+html,
+body {
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  background-color: rgb(223, 244, 247);
+  font-size: large;
+  color: #5862f3;
+}
+
+/* Header 1 */
+h1 {
+  color: rgb(36, 102, 36);
+  text-shadow: 2px 1px 1px white, 0 0 0.125em rgb(133, 133, 255),
+    0 0 0.2em aliceblue;
+}
+
+/* Header 2 */
+h2 {
+  color: rgb(36, 102, 36);
+  text-shadow: 2px 1px 1px white, 0 0 0.125em rgb(133, 133, 255),
+    0 0 0.2em aliceblue;
+}
+
+/* Header 3 */
+h3 {
+  color: rgb(36, 102, 36);
+  text-shadow: 2px 1px 1px white, 0 0 0.125em rgb(133, 133, 255),
+    0 0 0.2em aliceblue;
+}
+
+/* Header 4 */
+h4 {
+  color: rgb(36, 102, 36);
+  text-shadow: 2px 1px 1px white, 0 0 0.125em rgb(133, 133, 255),
+    0 0 0.2em aliceblue;
+}
+
+/* Header 5 */
+h5 {
+  color: rgb(36, 102, 36);
+  text-shadow: 2px 1px 1px white, 0 0 0.125em rgb(133, 133, 255),
+    0 0 0.2em aliceblue;
+}
+
+/* Header 6 */
+h6 {
+  color: rgb(36, 102, 36);
+  text-shadow: 2px 1px 1px white, 0 0 0.125em rgb(133, 133, 255),
+    0 0 0.2em aliceblue;
+}
+
+/* Paragraph Text */
+p {
+  font-size: large;
+  color: #5862f3;
+  max-inline-size: 66ch;
+}
+
+/* Images */
+/* Default */
+img {
+  max-width: 100%;
+  min-width: 70%;
+  height: auto;
+  border: 5px solid white;
+  border-radius: 5%;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 3px rgb(36, 102, 36);
+}
+
+figcaption {
+  color: white;
+  background-color: rgb(36, 102, 36);
+  font-size: medium;
+  width: fit-content;
+  padding: 3px;
+}
+
+/* Variant */
+.variantImage {
+  border-radius: 50%;
+  filter: grayscale(50%);
+}
+
+a:focus-visible {
+  outline: 2.5px dashed red;
+}
+
+button:focus-visible {
+  outline: 2.5px dashed red;
+}
+
+input:focus-visible {
+  outline: 2.5px dashed red;
+}
+
+/* Buttons */
+/* Guide to Buttons:
+https://www.w3schools.com/css/css3_buttons.asp */
+button {
+  background-color: #2e6a3b;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 7.5px 12.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition-duration: 0.4s;
+  min-width: fit-content;
+  max-width: 120px;
+}
+
+button:hover {
+  background-color: white;
+  color: #2e6a3b;
+  border: 3px solid #2e6a3b;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+*:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+*:disabled:hover {
+  background-color: #2e6a3b;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: not-allowed;
+}
+
+.success {
+  background-color: greenyellow;
+  color: black;
+  border: 3px solid black;
+}
+
+.success:hover {
+  background: greenyellow;
+  color: black;
+  box-shadow: none;
+  border: 3px solid greenyellow;
+  cursor: unset;
+}
+
+.error {
+  background: darkred;
+}
+
+.error:hover {
+  background-color: white;
+  color: darkred;
+  border: 3px solid darkred;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: help;
+}
+
+/* Links */
+a {
+  color: #2e6a3b;
+  /* color: #7d6342; */
+}
+
+/* CSS For this Website Specifically */
+.grid {
+  display: grid;
+  grid-template-areas:
+    "aside head head ."
+    "aside project1 project1 ."
+    "aside project2 project2 ."
+    "aside project3 project3 ."
+    "aside project4 project4 ."
+    "aside links links ."
+    "aside form form .";
+  /* lets you specify the size of columns on the grid */
+  /* fr is a ratio based unit, adds up all frs and splits
+up the space evenly among x many columns based on number
+of frs per column. doesn't give a fixed size */
+  grid-template-columns: 20% 3fr 3fr 20%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+}
+
+header {
+  grid-area: head;
+}
+
+header h1 {
+  /* margin-bottom: 0px; */
+  margin-bottom: 0px;
+  margin-left: 5%;
+}
+
+header ul {
+  margin-top: 5px;
+  padding: 0px;
+  margin-left: 10%;
+  list-style-type: none;
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(24, 51, 44);
+  color: white;
+}
+
+aside figure {
+  max-width: 80%;
+  margin: 5%;
+  margin-bottom: 0%;
+}
+
+aside img:hover {
+  box-shadow: 0 0 2px 3px rgb(36, 176, 211);
+}
+
+aside h2 {
+  color: rgb(170, 237, 253);
+  text-shadow: 0.1px 0.5px 0.5px white, 0 0 0.125em rgb(133, 133, 255),
+    0 0 0.2em aliceblue;
+  margin-bottom: 2%;
+  margin-top: 10%;
+  overflow-wrap: break-word;
+  padding-right: min(20%, 20px);
+}
+
+aside ul {
+  margin-top: 1px;
+  padding-left: min(20%, 20px);
+}
+
+aside li {
+  line-height: 5vh;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.project1 h2 {
+  margin-bottom: 0px;
+  margin-left: 5%;
+}
+
+.project1 ul {
+  margin-top: 5px;
+  padding: 0px;
+  margin-left: 10%;
+  list-style-type: none;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project2 h2 {
+  margin-bottom: 0px;
+  margin-left: 5%;
+}
+
+.project2 ul {
+  margin-top: 5px;
+  padding: 0px;
+  margin-left: 10%;
+  list-style-type: none;
+}
+
+.project2 img {
+  box-sizing: border-box;
+  width: 50vw;
+  height: 20vh;
+}
+
+.project3 {
+  grid-area: project3;
+}
+
+.project3 h2 {
+  margin-bottom: 0px;
+  margin-left: 5%;
+}
+
+.project3 ul {
+  margin-top: 5px;
+  padding: 0px;
+  margin-left: 10%;
+  list-style-type: none;
+}
+
+.project4 {
+  grid-area: project4;
+}
+
+.project4 h2 {
+  margin-bottom: 0px;
+  margin-left: 5%;
+}
+
+.project4 ul {
+  margin-top: 5px;
+  padding: 0px;
+  margin-left: 10%;
+  list-style-type: none;
+}
+
+.project2 h3,
+.project3 h3,
+.project4 h3 {
+  margin-top: 0px;
+}
+
+.project1 figure,
+.project2 figure,
+.project3 figure,
+.project4 figure {
+  display: table;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project3 img {
+  box-sizing: border-box;
+  height: 80vh;
+  width: 50vw;
+}
+
+.project1 img {
+  box-sizing: border-box;
+  height: 60vh;
+  width: 50vw;
+}
+
+.project4 img {
+  box-sizing: border-box;
+  height: 60vh;
+  width: 50vw;
+}
+
+.attribution {
+  display: table-caption;
+  caption-side: top;
+  min-width: min-content;
+  width: 85%;
+  max-width: fit-content;
+  max-inline-size: 25ch;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: auto; /* forces to furthest right side, auto takes up as much space */
+  margin-right: auto; /* in tandem with margin-left, sets to center */
+  padding: 3px;
+  text-align: center;
+}
+
+.links {
+  grid-area: links;
+}
+
+.links h3 {
+  margin-left: 5%;
+  margin-bottom: 0px;
+}
+
+.links ul {
+  margin-left: 10%;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+form {
+  grid-area: form;
+  font-size: 1.25rem;
+}
+
+form h3 {
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+form label,
+form input {
+  margin-left: 10%;
+  display: inline-block;
+}
+
+form button {
+  margin-left: 10%;
+  padding: 20px 30px;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 820px) {
+  aside h2 {
+    font-size: medium;
+  }
+  aside li {
+    font-size: small;
+    line-height: 4vh;
+  }
+}
+
+@media (max-width: 580px) {
+  aside h2 {
+    font-size: small;
+  }
+  aside li {
+    font-size: x-small;
+    line-height: 3vh;
+  }
+}
+
+@media (max-width: 450px) {
+  aside img {
+    border: 3px solid white;
+  }
+}
+
+@media (max-width: 550px) {
+  .project1 img,
+  .project3 img,
+  .project4 img {
+    box-sizing: border-box;
+    height: 50vh;
+    width: 50vw;
+  }
+}
+
+@media (prefers-contrast: more) {
+  html {
+    background-color: white;
+    color: #000;
+  }
+}
