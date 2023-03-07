@@ -22,4 +22,4 @@ Class notes and assigned readings
 Open the html file in a web browser, or use the link above to visit the deployed site
 
 # Notes:
-N/A
+The form at the bottom has no functionality, I just thought it would be fun to add.
