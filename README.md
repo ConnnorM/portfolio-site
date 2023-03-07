@@ -5,15 +5,15 @@ A website for my professional portfolio
 https://connor-martindale-portfolio.netlify.app/
 
 # Personal Info
-Student ID: 2408897
-Email: martindale@chapman.edu
-CPSC 458
-Project 2: Personal Portfolio Site
+- Student ID: 2408897
+- Email: martindale@chapman.edu
+- CPSC 458
+- Project 2: Personal Portfolio Site
 
 # Code Files:
-index.html
-style.css
-script.js
+- index.html
+- style.css
+- script.js
 
 # References:
 Class notes and assigned readings
